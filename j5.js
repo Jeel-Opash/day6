@@ -32,5 +32,3 @@ class car{
 const car1=new car("toyato","Corolla");
 
 car1.showDetails();
-
-
