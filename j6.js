@@ -1,28 +1,28 @@
 //Promise  :   .then(),.catch
-function asyncFun1(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            console.log("print");
-            resolve("success");
-        }, 3000);
-    });
-}
-function asyncFun2(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-            console.log("print");
-            resolve("success");
-        }, 3000);
-    });
-}
-let p1=asyncFun1();
-p1.then((res)=>{
-    console.log(res);
-    let p2=asyncFun2();
-    p2.then((res)=>{
-        console.log(res);
-    })
-});
+// function asyncFun1(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("print");
+//             resolve("success");
+//         }, 3000);
+//     });
+// }
+// function asyncFun2(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(() => {
+//             console.log("print");
+//             resolve("success");
+//         }, 3000);
+//     });
+// }
+// let p1=asyncFun1();
+// p1.then((res)=>{
+//     console.log(res);
+//     let p2=asyncFun2();
+//     p2.then((res)=>{
+//         console.log(res);
+//     })
+// });
 
 
 
@@ -59,3 +59,16 @@ p1.then((res)=>{
 // } finally {
 //   console.log("execution");
 // }
+
+
+let n = "heell jeel";
+
+for (let i = 0; i < n.length; i++) {
+    if (i === 1) {
+        console.log(n[i].toUpperCase());
+    }
+
+    if (n[i] === " " && n[i + 1]) {
+        console.log(n[i + 1].toUpperCase());
+    }
+}
